@@ -36,15 +36,6 @@ while True:
                 path = new_path
             else:
                 print(f"The system cannot find the path specified: {target}")
-    elif com.lower().startswith("wait "):
-        try: 
-            seconds = float(com[5:])
-            print(f"Waiting for {seconds} seconds...")
-            time.sleep(seconds)
-        except ValueError:
-            print("Invalid time value. Usage: wait <seconds>")
-            if seconds == "yoo":
-                time.sleep(3)
 
     
     else:
