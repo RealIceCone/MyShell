@@ -12,6 +12,7 @@ version 1.0 is very bad and only has these commands:
 - exit
 - dir
 - cd
+- clear (cls)
 
 ### How to make your own commands 😱
 Here’s an example of a command:
