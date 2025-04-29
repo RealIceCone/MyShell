@@ -25,7 +25,7 @@ Here’s an example of a command:
         except ValueError:
             print("Invalid time value. Usage: wait <seconds>")
 
-That's it — You just need an example. Unless you have not learnt python yet. I'm not here to teach you Python lil bro 😭🥀💀.
+That's it — You just need an example unless you have not learnt python yet, I'm not here to teach you Python lil bro 😭🥀💀.
 
 # Roadmap
 - Add more commands
