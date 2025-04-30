@@ -8,13 +8,24 @@ Just install and open it — not that hard 😭🥀 (Only works on Windows, btw.
 # How to use
 Once you open it, you can run commands 😱. I know, crazy, right?
 
-version 1.1 commands: 
+version 1.2 commands: 
 - exit
 - dir
 - cd
 - clear (cls)
 - set
 - echo
+- mkdir
+- rmdir
+- del
+- copy
+- move
+- cat
+- run
+- stop
+- touch
+- ping
+- ipconfig
 
 ### How to make your own commands 😱
 Here’s an example of a command:
@@ -33,17 +44,6 @@ That's it — You just need an example unless you have not learnt python yet, I'
 - Add more commands
 - Command aliases
 - Better error handling
-
-# Update 1.2
-In update 1.2 there is going to be more commands:
-- mkdir
-- rmdir
-- del
-- copy
-- move
-- cat
-- run
-- stop
 - touch
 
   # Requirements
