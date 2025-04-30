@@ -34,6 +34,16 @@ That's it — You just need an example unless you have not learnt python yet, I'
 - Command aliases
 - Better error handling
 
+# Update 1.2
+In update 1.2 there is going to be more commands:
+- mkdir
+- rmdir
+- del
+- copy
+- move
+- cat
+- touch
+
   # Requirements
 - Python 3.8 or higher
 - Windows
