@@ -42,6 +42,8 @@ In update 1.2 there is going to be more commands:
 - copy
 - move
 - cat
+- run
+- stop
 - touch
 
   # Requirements
