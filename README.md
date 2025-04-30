@@ -44,7 +44,6 @@ That's it — You just need an example unless you have not learnt python yet, I'
 - Add more commands
 - Command aliases
 - Better error handling
-- touch
 
   # Requirements
 - Python 3.8 or higher
