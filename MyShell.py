@@ -3,7 +3,7 @@ import time
 import shutil
 import re
 import subprocess
-print("MyShell [Version 1.1]")
+print("MyShell [Version 1.2]")
 print("By RealIceCone")
 print("")
 
