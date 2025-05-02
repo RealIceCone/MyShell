@@ -45,6 +45,10 @@ That's it — You just need an example unless you have not learnt python yet, I'
 - Command aliases
 - Better error handling
 
+# Update 1.3 commands 
+- help
+- curl
+
   # Requirements
 - Python 3.8 or higher
 - Windows
