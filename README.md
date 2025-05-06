@@ -8,7 +8,7 @@ Just install and open it — not that hard 😭🥀 (Only works on Windows, btw.
 # How to use
 Once you open it, you can run commands 😱. I know, crazy, right?
 
-version 1.2 commands: 
+version 1.3 commands: 
 - exit
 - dir
 - cd
@@ -26,6 +26,9 @@ version 1.2 commands:
 - touch
 - ping
 - ipconfig
+- help
+- curl
+- ./
 
 ### How to make your own commands 😱
 Here’s an example of a command:
@@ -45,10 +48,6 @@ That's it — You just need an example unless you have not learnt python yet, I'
 - Command aliases
 - Better error handling
 
-# Update 1.3 commands 
-- help
-- curl
-- ./
 
   # Requirements
 - Python 3.8 or higher
