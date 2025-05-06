@@ -3,7 +3,8 @@ import time
 import shutil
 import re
 import subprocess
-print("MyShell [Version 1.2]")
+from urllib.request import urlopen
+print("MyShell [Version 1.3]")
 print("By RealIceCone")
 print("")
 
@@ -40,6 +41,25 @@ def ipconfig_command():
     except Exception as e:
         print(f"Error running ipconfig: {e}")
 
+def unset_command(args):
+    if not args:
+        print("Usage: unset [variable_name]")
+        return
+    var_name = args
+    if var_name in variables:
+        del variables[var_name]
+        print(f"Unset variable: {var_name}")
+    else:
+        print(f"Variable not found: {var_name}")
+
+def open_command(args):
+    file_path = os.path.join(path, args.strip())
+    try:
+        os.startfile(file_path)
+    except FileNotFoundError:
+        print("File not found.")
+    except OSError as e:
+        print(f"Failed to open file: {e}")
 
 
 
@@ -169,5 +189,61 @@ while True:
         ping(host)
     elif com.lower() == "ipconfig":
         ipconfig_command() # Call the ipconfig function
+    elif com.lower().startswith("unset "):
+        args = com[5:].strip()
+        unset_command(args)
+    elif com.lower() == "env":
+        print(variables)
+    elif com.lower().startswith("curl "):
+        url = com[4:].strip()
+        response = urlopen(url)
+        raw_data = response.read()
+        try:
+            decoded_data = raw_data.decode('utf-8')
+        except UnicodeDecodeError:
+            decoded_data = raw_data.decode('latin-1')
+        
+        print(decoded_data)
+    elif com.lower().startswith("help "):
+        help1 = com[4:].strip()
+        if help1 == "curl":
+            print("Fetch and display content from a web URL")
+            print("")
+            print("Usage:")
+            print("     curl <URL>")
+            print("Example:")
+            print("      curl https://www.google.com")
+            print("")
+            print("Warning! If you try for example: google.com or www.google.com it will not work! You have to use https://")
+            print("Usage:")
+        elif help1 == "help":
+            print("    help <command>")
+            print("Example:")
+            print("    help echo")
+        elif help1 == "echo":
+            print("print out stuff")
+            print("")
+            print("Usage:")
+            print("    echo <something>")
+            print("Examples:")
+            print("    echo Hello World!")
+            print("    echo $myvar")
+            print("")
+            print("To use variables you need to use the command 'set'. Do 'help set' for more info.")
+        elif help1 == "set":
+            print("")
+            print("make variables")
+            print("Usage:")
+            print("     set <varname=value>")
+            print("Example:")
+            print("     set myvar=hey")
+            print("")
+    elif com.lower() == "help":
+        print("Try 'help help' instead!")
+    elif com.lower().startswith("./"):
+        args = com[2:].strip()
+        open_command(args)
+        
+
     else:
         print(f"'{com}' is not recognized as an internal command.") # https://github.com/RealIceCone/MyShell <-- My github if you could not tell
