@@ -43,6 +43,9 @@ Here’s an example of a command:
 
 That's it — You just need an example unless you have not learnt python yet, I'm not here to teach you Python lil bro 😭🥀💀.
 
+# Version 1.4
+- better help command
+
 # Roadmap
 - Add more commands
 - Better error handling?
