@@ -48,8 +48,7 @@ That's it — You just need an example unless you have not learnt python yet, I'
 
 # Roadmap
 - Add more commands
-- Better error handling?
-
+- Linux/Mac version
 
   # Requirements
 - Python 3.8 or higher
